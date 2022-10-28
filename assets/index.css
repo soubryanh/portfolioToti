@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+
+:root {
+  --bg-clr: #102432;
+  --bg-light-color: #152f40;
+  --text-clr: #ffffff;
+  --accent-clr: #ffda17;
+  --first-color: #ffda17;
+  --first-color-light: #152f40;
+  --body-color: #102432;
+
+  /*========== Font and typography ==========*/
+  --body-font: "Quicksand", sans-serif;
+  --normal-font-size: 1rem;
+}
+
+/* reset default styles */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: var(--bg-clr);
+  color: var(--text-clr);
+  font-size: 100%;
+  font-weight: 400;
+  font-family: Poppins;
+}
+
+a,
+a:focus,
+a:target {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  opacity: 0.7;
+}
+
+header {
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 1em;
+  position: relative;
+}
+
+header {
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 1em;
+  position: relative;
+}
+
+.toggle {
+  cursor: pointer;
+}
+.toggle svg {
+  fill: var(--accent-clr);
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.toggle.close {
+  margin: 1em 0;
+}
+
+nav {
+  width: 100%;
+  max-width: 80vw;
+  position: fixed;
+  background: var(--bg-light-color);
+  top: 0;
+  right: -80vw;
+  bottom: 0;
+  height: 100%;
+  padding: 1em;
+  transition: all 0.35s ease-in-out;
+  z-index: 10;
+}
+
+.site-nav li a {
+  padding: 0.5em 0;
+  display: block;
+}
