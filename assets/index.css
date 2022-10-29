@@ -100,3 +100,7 @@ nav {
   padding: 0.5em 0;
   display: block;
 }
+
+.nav-open {
+  right: 0;
+}
