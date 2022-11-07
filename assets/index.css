@@ -418,6 +418,44 @@ section {
   color: var(--bg-clr);
 }
 
+.contact-section {
+  background: var(--bg-light-color);
+}
+.contact-section h2 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 70%;
+  padding: 0.95rem;
+  margin: 0.2rem;
+  border: none;
+  border-radius: 7px;
+  background-color: var(--bg-clr);
+
+  font-family: Poppins;
+  color: #fff;
+  outline: none;
+  font-size: 200;
+}
+
+textarea:hover {
+  box-shadow: 1px 5px 1px #25516e;
+}
+
+.custom-cta.dark {
+  background: var(--bg-clr);
+  width: fit-content;
+}
+
 /* JavaScript */
 .nav-open {
   right: 0;
