@@ -1,0 +1,76 @@
+.work-section {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.toggle {
+  display: none;
+}
+nav {
+  position: relative;
+  background: unset;
+  right: unset;
+  width: unset;
+}
+.site-nav {
+  display: flex;
+}
+.site-nav li a {
+  opacity: 0.7;
+  padding: 0.3em 1em;
+  transition: all 0.35s ease-in-out;
+}
+.site-nav li a:hover {
+  opacity: 1;
+}
+.btn {
+  margin-left: 0.5em;
+  border: 1px solid var(--accent-clr);
+  border-radius: 5px;
+}
+.btn:hover {
+  background: var(--accent-clr);
+  color: var(--bg-clr);
+}
+
+.hero-section::after {
+  content: "";
+  background-image: url("https://i.ibb.co/rZ0R5Zw/IMG-4148.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30vw;
+  height: 30vw;
+  position: relative;
+  right: 0;
+  opacity: 0.3;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero-section:hover::after {
+  opacity: 1;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.hero-container {
+  z-index: 2;
+}
+.hero-title {
+  font-size: 5em;
+}
+.hero-subtitle {
+  font-size: 3em;
+}
+.about-section {
+  display: flex;
+  align-items: center;
+}
+.about-content {
+  width: 60%;
+  padding-right: 2em;
+}
+.tab-layout {
+  display: flex;
+}
+.tab-titles {
+  flex-direction: column;
+  overflow-x: unset;
+}

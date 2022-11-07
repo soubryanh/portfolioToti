@@ -69,6 +69,22 @@ header {
   position: relative;
 }
 
+.logo {
+  font-size: 1.75rem;
+  color: var(--accent-clr);
+  border: 3px solid var(--accent-clr);
+  height: 1.5em;
+  width: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: color 0.35s ease-in-out;
+}
+.logo:hover {
+  color: var(--text-clr);
+}
+
 .main-container {
   max-width: 1150px;
   width: 100%;
