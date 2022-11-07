@@ -338,7 +338,7 @@ section {
   border-radius: 5px;
   transition: all 0.35s ease-in-out;
   cursor: pointer;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .image-wrapper img {
@@ -356,6 +356,66 @@ section {
 }
 .image-wrapper:hover img {
   opacity: 1;
+}
+
+/* Work section */
+.work-section {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 10px;
+}
+.work-card {
+  background: var(--bg-light-color);
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.work-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.folder {
+  fill: var(--accent-clr);
+  height: 2em;
+  width: 2em;
+}
+
+.work-top span svg {
+  fill: var(--text-clr);
+  height: 1em;
+  width: 1em;
+}
+
+.work-title {
+  font-size: 1.5em;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.img-calculator img {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.work-title p {
+  font-size: 0.8em;
+}
+.work-technologies span {
+  display: inline-flex;
+  padding: 0.3em 1.5em;
+  margin: 0.2em;
+  font-size: 1em;
+  background: var(--bg-clr);
+  border-radius: 2em;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+}
+.work-technologies span:hover {
+  background: var(--accent-clr);
+  color: var(--bg-clr);
 }
 
 /* JavaScript */
