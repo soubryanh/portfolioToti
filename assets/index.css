@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
 
 :root {
   --bg-clr: #102432;
@@ -10,7 +10,7 @@
   --body-color: #102432;
 
   /*========== Font and typography ==========*/
-  --body-font: "Quicksand", sans-serif;
+  --body-font: 'Quicksand', sans-serif;
   --normal-font-size: 1rem;
 }
 
@@ -202,7 +202,7 @@ section {
   margin-bottom: 1.5em;
 }
 .section-title::before {
-  content: "/";
+  content: '/';
   color: var(--accent-clr);
   margin-right: 0.5em;
 }
@@ -250,7 +250,7 @@ section {
 }
 
 .social__tooltip::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 12px;
   height: 12px;
@@ -439,24 +439,65 @@ section {
 }
 .contact-section h2 {
   font-size: 3em;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .contact-section form {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
+.form-control {
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.form-control.success input {
+  border-color: #c79500;
+}
+
+.form-control.error input {
+  border-color: #cb3120;
+}
+
+.form-control i {
+  position: absolute;
+  top: 20%;
+  right: 26%;
+  visibility: hidden;
+}
+
+.form-control.success i.bx-check-circle {
+  visibility: visible;
+  color: #c79500;
+}
+.form-control.error i.bx-error-circle {
+  visibility: visible;
+  color: #cb3120;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: -6px;
+  left: 25%;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #cb3120;
+}
 input,
 textarea {
-  width: 70%;
+  width: 50%;
   padding: 0.95rem;
   margin: 0.2rem;
-  border: none;
   border-radius: 7px;
   background-color: var(--bg-clr);
-
   font-family: Poppins;
   color: #fff;
   outline: none;
@@ -469,7 +510,24 @@ textarea:hover {
 
 .custom-cta.dark {
   background: var(--bg-clr);
-  width: fit-content;
+}
+
+.submit {
+  background-image: linear-gradient(
+    135deg,
+    #ffff77 0,
+    #fff14e 25%,
+    #f8d110 50%,
+    #deb100 75%,
+    #c79500 100%
+  );
+  border-radius: 28px;
+  border: none;
+  color: var(--bg-clr);
+  text-align: center;
+  padding: 0 1.5em;
+  font-size: 13px;
+  height: 28px;
 }
 
 /* JavaScript */
